@@ -16,9 +16,6 @@ version: 1.0.0+1
 environment:
   sdk: ">=2.1.0 <3.0.0"
 
-assets:
-  .env
-
 dependencies:
   flutter:
     sdk: flutter
@@ -28,6 +25,7 @@ dependencies:
   cupertino_icons: ^0.1.2
   google_maps_flutter: ^0.4.0
   speech_recognition: ^0.3.0
+  flutter_signature_pad: ^2.0.0
 
 dev_dependencies:
   flutter_test:
@@ -44,6 +42,10 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+
+
+  assets:
+    - assets/
 
   # To add assets to your application, add an assets section, like this:
   # assets:
