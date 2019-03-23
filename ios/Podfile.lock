@@ -8,10 +8,13 @@ PODS:
   - GoogleMaps/Base (2.7.0)
   - GoogleMaps/Maps (2.7.0):
     - GoogleMaps/Base
+  - speech_recognition (0.3.0):
+    - Flutter
 
 DEPENDENCIES:
   - Flutter (from `.symlinks/flutter/ios`)
   - google_maps_flutter (from `.symlinks/plugins/google_maps_flutter/ios`)
+  - speech_recognition (from `.symlinks/plugins/speech_recognition/ios`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -22,12 +25,15 @@ EXTERNAL SOURCES:
     :path: ".symlinks/flutter/ios"
   google_maps_flutter:
     :path: ".symlinks/plugins/google_maps_flutter/ios"
+  speech_recognition:
+    :path: ".symlinks/plugins/speech_recognition/ios"
 
 SPEC CHECKSUMS:
   Flutter: 9d0fac939486c9aba2809b7982dfdbb47a7b0296
   google_maps_flutter: 6449d5918d3f1a69a37dc9c557bbad7bb9bcf0e9
   GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
+  speech_recognition: acf2b916cd7aff5d4b76a238740afe2aff85e6bc
 
-PODFILE CHECKSUM: aff02bfeed411c636180d6812254b2daeea14d09
+PODFILE CHECKSUM: 2f253c56af71689385cf1912d5b62e0e49d75831
 
 COCOAPODS: 1.5.3
