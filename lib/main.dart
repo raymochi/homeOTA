@@ -3,11 +3,12 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:speech_recognition/speech_recognition.dart';
+import 'marker_set.dart';
 
 void main() => runApp(MaterialApp(
-    title: 'homeOTA',
-    home: HomeScreen(),
-  ));
+  title: 'homeOTA',
+  home: HomeScreen(),
+));
 
 class HomeScreen extends StatefulWidget {
   HomeScreen({Key key, this.title}) : super(key: key);
@@ -19,18 +20,6 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   Completer<GoogleMapController> _controller = Completer();
-
-  Set<Marker> markers = new Set.from([
-    Marker(
-      markerId: MarkerId('1'),
-      position: LatLng(43.66014526, -79.37840775),
-      icon: BitmapDescriptor.defaultMarker,
-      infoWindow: InfoWindow(
-        title: 'St. Vincent De Paul - Mary\'s Home',
-        snippet: '5 Star Rating',
-      )
-    )
-  ]);
 
   static const LatLng _center = const LatLng(43.646343, -79.383252);
 
