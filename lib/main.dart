@@ -6,6 +6,7 @@ import 'package:speech_recognition/speech_recognition.dart';
 import 'marker_set.dart';
 import 'package:flutter_signature_pad/flutter_signature_pad.dart';
 import 'dart:convert';
+import 'package:http/http.dart';
 
 void main() => runApp(MaterialApp(
   title: 'homeOTA',
@@ -93,7 +94,6 @@ class _ModalState extends State<Modal> {
     print('_ModalState.activateSpeechRecognizer... ');
     _speech = new SpeechRecognition();
     _speech.setAvailabilityHandler(onSpeechAvailability);
-    // _speech.setCurrentLocaleHandler(onCurrentLocale);
     _speech.setRecognitionStartedHandler(() => setState(() => _isListening = true));
     _speech.setRecognitionResultHandler((String text) => setState(() => transcription = text));
     _speech.setRecognitionCompleteHandler(() => setState(() => _isListening = false));
@@ -125,7 +125,16 @@ class _ModalState extends State<Modal> {
 
     print('encoded sig: $encoded');
     print('transcription: $transcription');
-    
+    final Response response = await post(
+      'https://h4g-processdata-app.azurewebsites.net/api/ProcessData',
+      body: {
+        'text' : transcription,
+        'image': encoded,
+        'geolocation': '[1,1]'
+      }
+    );
+    print(response.statusCode);
+    print(response.body);
     Navigator.pop(context);
   }
 
@@ -228,6 +237,7 @@ class SignatureScreen extends StatelessWidget {
                   onPressed: () => this.sign.currentState.clear(),
                   child: Icon(Icons.clear),
                   backgroundColor: Colors.redAccent,
+                  heroTag: 'clearButton',
                 ),
                 FloatingActionButton(
                   onPressed: this.submit,
