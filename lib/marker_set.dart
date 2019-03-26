@@ -1,15 +1,7 @@
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 Set<Marker> markers = new Set.from([
-  Marker(
-      markerId: MarkerId('0'),
-      position: LatLng(43.66014526, -79.37840775),
-      icon: BitmapDescriptor.defaultMarker,
-      infoWindow: InfoWindow(
-        title: 'St. Vincent De Paul - Mary\'s Home',
-        snippet: '70 Gerrard St E',
-      ),
-    ),
+  
 
     Marker(
       markerId: MarkerId('1'),
@@ -31,15 +23,7 @@ Set<Marker> markers = new Set.from([
       ),
     ),
 
-    Marker(
-      markerId: MarkerId('3'),
-      position: LatLng(43.64874717, -79.39323797),
-      icon: BitmapDescriptor.defaultMarker,
-      infoWindow: InfoWindow(
-        title: 'Streets to Homes Assessment & Referral Centre',
-        snippet: '129 Peter St',
-      ),
-    ),
+   
 
     Marker(
       markerId: MarkerId('4'),
@@ -71,15 +55,7 @@ Set<Marker> markers = new Set.from([
       ),
     ),
 
-    Marker(
-      markerId: MarkerId('7'),
-      position: LatLng(43.65205191, -79.39147427),
-      icon: BitmapDescriptor.defaultMarker,
-      infoWindow: InfoWindow(
-        title: 'University Settlement - Part time Shelter',
-        snippet: '23 Grange Rd',
-      ),
-    ),
+    
 
     Marker(
       markerId: MarkerId('8'),
@@ -111,15 +87,7 @@ Set<Marker> markers = new Set.from([
       ),
     ),
 
-    Marker(
-      markerId: MarkerId('11'),
-      position: LatLng(43.64818818, -79.39800551),
-      icon: BitmapDescriptor.defaultMarker,
-      infoWindow: InfoWindow(
-        title: 'YMCA House',
-        snippet: '485 Queen St W',
-      ),
-    ),
+    
 
     Marker(
       markerId: MarkerId('12'),
@@ -211,15 +179,7 @@ Set<Marker> markers = new Set.from([
       ),
     ),
 
-    Marker(
-      markerId: MarkerId('22'),
-      position: LatLng(43.65950349, -79.38143531),
-      icon: BitmapDescriptor.defaultMarker,
-      infoWindow: InfoWindow(
-        title: 'Covenant House',
-        snippet: '20 Gerrard St E',
-      ),
-    ),
+   
 
     Marker(
       markerId: MarkerId('23'),
@@ -501,15 +461,7 @@ Set<Marker> markers = new Set.from([
       ),
     ),
 
-    Marker(
-      markerId: MarkerId('53'),
-      position: LatLng(43.6411163, -79.40267349),
-      icon: BitmapDescriptor.defaultMarker,
-      infoWindow: InfoWindow(
-        title: 'Seaton House/Fort York',
-        snippet: '38 Bathurst St',
-      ),
-    ),
+    
 
     Marker(
       markerId: MarkerId('54'),
@@ -558,6 +510,132 @@ Set<Marker> markers = new Set.from([
       infoWindow: InfoWindow(
         title: 'St. Vincent De Paul - Elisa House',
         snippet: '60 Newcastle St',
+      ),
+    ),
+
+    Marker(
+      markerId: MarkerId('h1'),
+      position: LatLng(43.646343, -79.384252),
+      icon: BitmapDescriptor.fromAsset('assets/person-icon.png'),
+    ),
+
+    Marker(
+      markerId: MarkerId('h2'),
+      position: LatLng(43.643343, -79.388252),
+      icon: BitmapDescriptor.fromAsset('assets/person-icon.png'),
+    ),
+
+    Marker(
+      markerId: MarkerId('h3'),
+      position: LatLng(43.646243, -79.383252),
+      icon: BitmapDescriptor.fromAsset('assets/person-icon.png'),
+    ),
+
+    Marker(
+      markerId: MarkerId('h4'),
+      position: LatLng(43.647343, -79.384252),
+      icon: BitmapDescriptor.fromAsset('assets/person-icon.png'),
+    ),
+
+    Marker(
+      markerId: MarkerId('h5'),
+      position: LatLng(43.643143, -79.383652),
+      icon: BitmapDescriptor.fromAsset('assets/person-icon.png'),
+    ),
+
+    Marker(
+      markerId: MarkerId('h6'),
+      position: LatLng(43.646943, -79.386752),
+      icon: BitmapDescriptor.fromAsset('assets/person-icon.png'),
+    ),
+
+    Marker(
+      markerId: MarkerId('7'),
+      position: LatLng(43.65205191, -79.39147427),
+      icon: BitmapDescriptor.defaultMarker,
+      infoWindow: InfoWindow(
+        title: 'University Settlement - Part time Shelter',
+        snippet: '23 Grange Rd',
+      ),
+    ),
+
+     Marker(
+      markerId: MarkerId('3'),
+      position: LatLng(43.64874717, -79.39323797),
+      icon: BitmapDescriptor.defaultMarker,
+      infoWindow: InfoWindow(
+        title: 'Streets to Homes Assessment & Referral Centre',
+        snippet: '129 Peter St',
+      ),
+    ),
+
+    Marker(
+      markerId: MarkerId('11'),
+      position: LatLng(43.64818818, -79.39800551),
+      icon: BitmapDescriptor.defaultMarker,
+      infoWindow: InfoWindow(
+        title: 'YMCA House',
+        snippet: '485 Queen St W',
+      ),
+    ),
+
+    Marker(
+      markerId: MarkerId('53'),
+      position: LatLng(43.6411163, -79.40267349),
+      icon: BitmapDescriptor.defaultMarker,
+      infoWindow: InfoWindow(
+        title: 'Seaton House/Fort York',
+        snippet: '38 Bathurst St',
+      ),
+    ),
+
+     Marker(
+      markerId: MarkerId('22'),
+      position: LatLng(43.65950349, -79.38143531),
+      icon: BitmapDescriptor.defaultMarker,
+      infoWindow: InfoWindow(
+        title: 'Covenant House',
+        snippet: '20 Gerrard St E',
+      ),
+    ),
+
+    Marker(
+      markerId: MarkerId('0'),
+      position: LatLng(43.66014526, -79.37840775),
+      icon: BitmapDescriptor.defaultMarker,
+      infoWindow: InfoWindow(
+        title: 'St. Vincent De Paul - Mary\'s Home',
+        snippet: '70 Gerrard St E',
+      ),
+    ),
+
+    Marker(
+      markerId: MarkerId('50'),
+      position: LatLng(43.65995605, -79.37426518),
+      icon: BitmapDescriptor.defaultMarker,
+      infoWindow: InfoWindow(
+        title: 'Seaton House Main Site',
+        snippet: '339 George St',
+      ),
+    ),
+
+    Marker(
+      markerId: MarkerId('33'),
+      position: LatLng(43.65230693, -79.37396099),
+      icon: BitmapDescriptor.defaultMarker,
+      infoWindow: InfoWindow(
+        title: 'Fred Victor Centre - Women\'s Shelter',
+        snippet: '86 Lombard St',
+      ),
+    ),
+
+    Marker(
+      markerId: MarkerId('46'),
+      position: LatLng(43.6523228, -79.37247726),
+      icon: BitmapDescriptor.defaultMarker,
+      infoWindow: InfoWindow(
+        title: 'Salvation Army - Gateway',
+        snippet: '107 Jarvis St',
       ),
     ),
 ]);
