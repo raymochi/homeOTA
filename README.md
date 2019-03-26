@@ -10,6 +10,9 @@ run
 
 `
   flutter packages get
+`
+
+`
   flutter run
 `
 
